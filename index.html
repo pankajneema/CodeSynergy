@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Clark - Free Bootstrap 4 Template by Colorlib</title>
+	<title>CodeSynergy - Synergy in Coding, Excellence in Solutions</title>
 	<style>
 		.progress-wrap {
 			background:   #3876d9;
@@ -33,6 +33,148 @@
 		.sub_line {
 			color: #d3d3d3;
 		}
+
+.shareArticle {
+  padding-top: 10px;
+}
+
+.shareSocial {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 30px;
+  @media (max-width: 767px) {
+    flex-flow: column;
+  }
+  .socialTitle {
+    margin: 0 15px 0 0;
+    font-size: 20px;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+  .socialList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    li {
+      margin: 5px;
+      &:first-child {
+        padding-left: 0;
+      }
+      a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        text-decoration: none;
+        background-color: #999;
+        color: #fff;
+        transition: .35s;
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform-origin: top left;
+          transform: scale(1) translate(-50%, -50%);
+          transition: .35s;
+        }
+        &:hover {
+          i {
+            transform: scale(1.5) translate(-50%, -50%);
+          }
+        }
+      }
+      &:nth-child(1) a {
+        background-color: #135cb6;
+      }
+      &:nth-child(2) a {
+        background-color: #00aced;
+      }
+	  &:nth-child(3) a {
+        background-color: #1FB381;
+      }
+      &:nth-child(4) a {
+		background-color: #ff0a4b;
+      } 
+     
+    }
+  }
+}
+
+.shareLink {
+  .permalink {
+    position: relative;
+    border-radius: 30px;
+    .textLink {
+      text-align: center;
+      padding: 12px 60px 12px 30px;
+      height: 45px;
+      width: 450px;
+      font-size: 16px;
+      letter-spacing: .3px;
+      color: #494949;
+      border-radius: 25px;
+      border: 1px solid #f2f2f2;
+      background-color: #f2f2f2;
+      outline: 0;
+      appearance: none;
+      transition: all .3s ease;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      &:focus {
+        border-color: #d8d8d8;
+      }
+      &::selection {
+        color: #fff;
+        background-color: #ff0a4b;
+      }
+    }
+    .copyLink {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      cursor: pointer;
+      transform: translateY(-50%);
+      &:hover {
+        &:after {
+          opacity: 1;
+          transform: translateY(0) translateX(-50%);
+        }
+      }
+      &:after {
+        content: attr(tooltip);
+        width: 140px;
+        bottom: -40px;
+        left: 50%;
+        padding: 5px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        background-color: #000000;
+        color: #ffffff;
+        transform: translateY(-10px) translateX(-50%);
+        transition: all 300ms ease;
+            text-align: center;
+      }
+      i {
+        font-size: 20px;
+        color: #ff0a4b;
+      }
+    }
+  }
+}
 	</style>
 	
 	
@@ -93,39 +235,31 @@
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/home_1.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							>
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Pankaj Kumar</span></h1>
-								<h2 class="mb-4">A software Engineer</h2>
-								<p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
 							style="background-image:url(images/home_2.png);">
 							<div class="overlay"></div>
 						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
+						<div class="one-forth d-flex  align-items-center ftco-animate">
 							<div class="text">
-								<h1><span class="subheading">Hello!</span></h1>
-								<h1 class="mb-4 mt-3">I'm passionate about crafting innovative solutions as a <span>software engineer</span> based in India</h1>	
-															<p><a  href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#services-section"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-5">I'm <span>Pankaj Kumar</span></h1>
+								<h2 class="mb-4 mt-3">A software engineer from India, adept at solving the latest technical challenges and dedicated to crafting innovative solutions.</h2>
+								<p>
+									<!-- SOCIAL LINKES  -->
+									<div class="shareArticle">
+										<div class="shareSocial">
+											<a href="#contact-section" class="btn btn-primary py-3 px-4">
+												GET IN TOUCH <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+											</a>										 
+										 <ul class="socialList pl-3">
+											<li><a href="https://m.facebook.com/profile.php?id=100073244336532"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="https://www.linkedin.com/in/pankaj-neema-b8b10320b/"><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href="https://wa.me/918171268630/"><i class="fab fa-whatsapp"></i></a></li>
+											<li><a href="mailto:pankaj200321@gmail.com"><i class="fab fa-google"></i></a></li>
+										  </ul>
+										</div>
+									  </div>
+									  <!-- SOCIAL LINKES END HERE  -->
+								</p>
 							</div>
 						</div>
 					</div>
@@ -562,16 +696,16 @@
 			</div>
 			<div class=" container border border-primary rounded py-5 ftco-animate" style="background-color:  #05325c; background-image: linear-gradient(to right, #05325c, #062239);">
 				<div class="row justify-content-center" style="display: flex;">
-				<div class="col-3" onclick="location.href='https://wa.me/918171268630/';" style="cursor: pointer;">
-					<center><h3 style="color: #048CFB;">💬📞</h3></center>
+				<div class="col-3" style="cursor: pointer;">
+					<center><h3 style="color: #048CFB;"><a href="tel:your-phone-number" style="color: blue;">
+						<i class="fas fa-phone-alt"></i> </a></h3></center>
 					<p class="text-center"> +91 8171268630 <br>
-					<span>📱 Let's chat!</span></p>
 				</div>
 				<div class="col-3">
 					<center><h3 style="color: #048CFB;">📮</h3></center>
 					 <p class="text-center">pankaj200321@gmail.com</p>
 				</div>
-				<div class="col-3" onclick="location.href='https://www.example.com';" style="cursor: pointer;">
+				<div class="col-3"  style="cursor: pointer;">
 					<center><h3 style="color: #048CFB;">📍🗺️</h3></center>
 					<div class="text-center">sector 62, Noida, Uttar Pradesh, India</div>
 				</div>
@@ -640,8 +774,7 @@
 		&copy;  Mr. Hacker  || Programmer || Ethical Hacker 	  </div> 
 	</footer>
 			<!-- Contact From End Here  Stop  -->
-			<!-- Contact End Here -->
-			<!-- <script src="js/jquery.min.js"></script> -->
+	
 			<script src="js/jquery-migrate-3.0.1.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
@@ -655,7 +788,6 @@
 			<script src="js/scrollax.min.js"></script>
 			<script src="js/contact.js"></script>
 			<script src="js/main.js"></script>
-			<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 			<script src="js/jquery.validate.min.js"></script>
 
 </body>
